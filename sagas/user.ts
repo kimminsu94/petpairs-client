@@ -28,13 +28,9 @@ import {
 import { IImgFile, IPet, IUser } from "../interface/iUser";
 
 function logInAPI(data: logInData) {
-  return axios.post(
-    "https://ec2-52-79-98-228.ap-northeast-2.compute.amazonaws.com/user/login",
-    data,
-    {
-      headers: { "Content-Type": "application/json" },
-    }
-  );
+  return axios.post("https://petpairs.de/user/login", data, {
+    headers: { "Content-Type": "application/json" },
+  });
 }
 
 function* logIn(action: ILogInRequest) {
