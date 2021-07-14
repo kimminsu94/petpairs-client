@@ -56,7 +56,7 @@ function* logIn(action: ILogInRequest) {
 }
 
 function signupAPI(data: signupData) {
-  return axios.post("https://petpairs.de/user/signup", data);
+  return axios.post("http://petpairs.de/user/signup", data);
 }
 
 function* signup(action: ISignUpRequest) {
