@@ -28,7 +28,7 @@ import {
 import { IImgFile, IPet, IUser } from "../interface/iUser";
 
 function logInAPI(data: logInData) {
-  return axios.post("http://petpairs.de/user/login", data, {
+  return axios.post("https://petpairs.de/user/login", data, {
     headers: { "Content-Type": "application/json" },
   });
 }
@@ -56,7 +56,7 @@ function* logIn(action: ILogInRequest) {
 }
 
 function signupAPI(data: signupData) {
-  return axios.post("http://petpairs.de/user/signup", data);
+  return axios.post("https://petpairs.de/user/signup", data);
 }
 
 function* signup(action: ISignUpRequest) {
