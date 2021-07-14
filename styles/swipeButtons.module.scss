@@ -1,0 +1,25 @@
+.swipeButtonContainer {
+	display: flex;
+	width: 30%;
+	justify-content: space-around;
+	position: fixed;
+	bottom: 4vh;
+	.buttonBox {
+		background-color: white;
+		width: 75px;
+		height: 75px;
+		border-radius: 30px;
+		transition: all 0.1s ease-in;
+		.buttonIcon {
+			position: relative;
+			margin: 12px 12px;
+			font-size: 50px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.swipeButtonContainer {
+		bottom: 4vh;
+	}
+}

@@ -1,0 +1,33 @@
+.footer {
+	float: left;
+	width: 100%;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #ee514a;
+	bottom: 0;
+	.about {
+		padding-bottom: 0%;
+		margin: 0 auto;
+	}
+	.memList {
+		list-style: none;
+		display: inline;
+		padding-bottom: 3px;
+		display: flex;
+		justify-content: center;
+		}
+			.contactList {
+				list-style: none;
+				padding-bottom: 3px;
+				padding-right: 35px;
+				padding-left: 35px;
+				justify-content: space-between;
+			}
+}
+@media (max-width: 767px) {
+	.footer {
+		display: flex;
+	}
+}

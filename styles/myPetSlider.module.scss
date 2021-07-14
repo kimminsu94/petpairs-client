@@ -1,0 +1,77 @@
+.petImgSlider {
+	position: relative;
+	height: 40vh;
+	width: 50vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 30px;
+	border: 2rem, solid, red;
+
+	.card {
+		z-index: 1000;
+		display: flex;
+		width: 25vw;
+		height: 40vh;
+		// border: 3rem, solid, black;
+		border-radius: 7px;
+		background-size: cover;
+		background-position: center;
+		box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.3);
+		.arrows {
+			width: 25vw;
+			display: flex;
+
+			.leftArrow {
+				position: relative;
+				display: flex;
+				// top: 30%;
+				left: 20px;
+				font-size: 3rem;
+				color: hotpink;
+				z-index: 10;
+				cursor: pointer;
+				flex-grow: 1;
+				justify-content: flex-start;
+				align-self: center;
+			}
+			.rightArrow {
+				position: relative;
+				display: flex;
+				// top: 30%;
+				right: 20px;
+				font-size: 3rem;
+				color: hotpink;
+				z-index: 10;
+				cursor: pointer;
+				flex-grow: 1;
+				justify-content: flex-end;
+				align-self: center;
+			}
+		}
+
+		h2 {
+			margin-left: 10px;
+			color: white;
+			position: absolute;
+			bottom: 30px;
+		}
+		p {
+			margin-left: 10px;
+			color: white;
+			position: absolute;
+			bottom: 10px;
+		}
+	}
+	.buttons {
+		display: flex;
+		padding-top: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	.card {
+		width: 98vw;
+	}
+}

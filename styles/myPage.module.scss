@@ -1,0 +1,138 @@
+.bodyContainer {
+	// display: flex;
+
+	// height: 100vh;
+	// width: 100vw;
+	// align-items: flex-start;
+	// justify-self: flex-end;
+	// align-items: center;
+	// justify-content: center;
+
+	.bodyWhole {
+		background-color: rgb(250, 244, 244);
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		width: 100vw;
+		height: 100vh;
+		align-items: center;
+		justify-items: center;
+
+		// align-items: center;
+		.upperBodyContainer {
+			display: flex;
+			flex-direction: column;
+			width: 50vw;
+			height: 55%;
+			padding-top: 30px;
+			border: 2rem, solid, blue;
+			align-content: center;
+			background-color: rgb(250, 244, 244);
+			// .slider {
+			// 	display: flex;
+
+			// }
+		}
+		.lowerBodyContainer {
+			display: flex;
+			width: 50vw;
+			height: 45%;
+			flex-direction: column;
+			align-content: center;
+			background-color: rgb(250, 244, 244);
+			align-items: center;
+			overflow-y: scroll;
+			.userPetInfo,
+			.editUserPetInfo {
+				display: flex;
+				// position: relative;
+				flex-direction: column;
+				border: 0.3rem solid #ee514a;
+				border-radius: 1.4rem;
+				padding: 0 1rem 1rem;
+				width: 25vw;
+				overflow-y: scroll;
+				// width: 50vw;
+
+				.userInfoEdit,
+				.userInfo {
+					display: flex;
+					flex-direction: column;
+					// border: 3rem, solid, white;
+					// width: 500px;
+				}
+				.petInfo {
+					display: flex;
+					align-items: left;
+					flex-direction: column;
+					width: 25vw;
+					border: 3rem, solid, black;
+					// max-width: 200px;
+					.introduce {
+						// border: 1px solid tan;
+						width: 400px;
+						margin-top: 20px;
+
+						border-top-style: solid;
+						border-bottom-style: solid;
+						border-width: 0.5px;
+						line-height: 3rem;
+					}
+				}
+				.petInfoEdit {
+					display: flex;
+					flex-direction: column;
+					.editPetName {
+						display: flex;
+						.name {
+							padding-left: 40px;
+							align-self: center;
+						}
+					}
+					.editSpecies {
+						display: flex;
+						.petSpecies {
+							padding-left: 40px;
+							align-self: center;
+						}
+					}
+					.editBreed {
+						display: flex;
+						.petBreed {
+							padding-left: 40px;
+							align-self: center;
+						}
+					}
+					.editAge {
+						display: flex;
+						.petAge {
+							padding-left: 40px;
+							align-self: center;
+						}
+					}
+					// .editInfoBtn {
+					// 	display: flex;
+					// 	width: 50%;
+					// }
+					// .deleteUserBtn {
+					// 	display: flex;
+					// 	width: 50%;
+					// }
+				}
+			}
+			.editIntroduce {
+				display: flex;
+				.petIntroduce {
+					padding-left: 40px;
+					align-self: center;
+				}
+			}
+			.onEditBtns {
+				display: flex;
+				justify-content: center;
+				padding-top: 20px;
+				width: 100%;
+			}
+		}
+	}
+}

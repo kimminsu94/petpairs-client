@@ -1,0 +1,65 @@
+#mainContainer {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	.mainSection {
+		background-color: rgb(250, 244, 244);
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 100vw;
+		height: 100vh;
+		.chatDivision {
+			background-color: white;
+			display: relative;
+			// width: 35%;
+			height: 100%;
+			border-right: 1px solid rgb(203, 203, 203);
+			flex: 1 1 25%;
+			.profileDiv {
+				display: flex;
+				align-self: center;
+				height: 75px;
+				background-color: #ee514a;
+				.profilePicDiv {
+					border: 2px solid white;
+					border-radius: 50px;
+					display: inline-block;
+					margin-top: 10px;
+					margin-left: 20px;
+					width: 40px;
+					height: 40px;
+					.profilePicture {
+						border-radius: 20px;
+					}
+				}
+			}
+		}
+		.mainDivision {
+			// width: 65%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			flex: 1 1 75%;
+		}
+	}
+}
+
+.profileSpan {
+	display: inline-block;
+	font-size: 30px;
+	color: white;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+	//767 사이즈 이하일 때
+	.chatDivision {
+		display: none;
+	}
+	.mainDivision {
+		width: 100%;
+	}
+}
