@@ -28,7 +28,7 @@ import {
 import { IImgFile, IPet, IUser } from "../interface/iUser";
 
 function logInAPI(data: logInData) {
-  return axios.post("https://petpairs.de/user/login", data, {
+  return axios.post("http://petpairs.de/user/login", data, {
     headers: { "Content-Type": "application/json" },
   });
 }
@@ -56,10 +56,7 @@ function* logIn(action: ILogInRequest) {
 }
 
 function signupAPI(data: signupData) {
-  return axios.post(
-    "https://ec2-52-79-98-228.ap-northeast-2.compute.amazonaws.com/user/signup",
-    data
-  );
+  return axios.post("https://petpairs.de/user/signup", data);
 }
 
 function* signup(action: ISignUpRequest) {
@@ -79,9 +76,7 @@ function* signup(action: ISignUpRequest) {
 }
 
 function logOutAPI() {
-  return axios.get(
-    "https://ec2-52-79-98-228.ap-northeast-2.compute.amazonaws.com/user/logout"
-  );
+  return axios.get("https://petpairs.de/user/logout");
 }
 
 function* logOut() {
@@ -117,9 +112,7 @@ function* logOut() {
 // 	data?: number;
 // }
 function loadProfileAPI(data: loadProfileData) {
-  return axios.get(
-    "https://ec2-52-79-98-228.ap-northeast-2.compute.amazonaws.com/user/userInfo"
-  );
+  return axios.get("https://petpairs.de/user/userInfo");
 }
 function* loadProfile(action: ILoadProfileRequest) {
   try {
@@ -144,9 +137,7 @@ interface ILoadCards {
   data: number;
 }
 function loadCardsAPI(data: number) {
-  return axios.get(
-    "https://ec2-52-79-98-228.ap-northeast-2.compute.amazonaws.com/pet/otherPetPhotoView"
-  );
+  return axios.get("https://petpairs.de/pet/otherPetPhotoView");
 }
 function* loadCards(action: ILoadCardsRequest) {
   try {
@@ -166,10 +157,7 @@ function* loadCards(action: ILoadCardsRequest) {
 }
 
 function updateUserAPI(data: updateProfileData) {
-  return axios.post(
-    "https://ec2-52-79-98-228.ap-northeast-2.compute.amazonaws.com/user/userOrPetEdit",
-    data
-  );
+  return axios.post("https://petpairs.de/user/userOrPetEdit", data);
 }
 
 function* updateProfile(action: IUpdateRequest) {
